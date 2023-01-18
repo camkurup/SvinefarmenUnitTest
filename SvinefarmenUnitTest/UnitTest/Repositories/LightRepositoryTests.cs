@@ -13,6 +13,7 @@ namespace SvinefarmenUnitTest.UnitTests.Repositories
 
 		public LightRepositoryTests()
 		{
+			//Setting op af mocked DB
 			_options = new DbContextOptionsBuilder<ThePigFarmContext>()
 				.UseInMemoryDatabase(databaseName: "ThePigFarm")
 				.Options;
